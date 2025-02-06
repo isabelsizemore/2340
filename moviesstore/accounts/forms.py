@@ -1,4 +1,7 @@
 from django.contrib.auth.forms import UserCreationForm
+from django.forms.utils import ErrorList
+from django.utils.safestring import mark_safe
+
 class CustomUserCreationForm(UserCreationForm):
     def __init__(self, *args, **kwargs):
         super(CustomUserCreationForm, self).__init__(*args, **kwargs)
@@ -8,3 +11,11 @@ class CustomUserCreationForm(UserCreationForm):
             self.fields[fieldname].widget.attrs.update(
                 {'class': 'form-control'}
             )
+
+class CustomErrorList(ErrorList):
+    def __str__(self):
+        if not self:
+            return ''
+        return mark_safe(''.join([
+            f'<div class="alert alert-danger" role="alert">'
+            f'{e}</div>' for e in self]))
