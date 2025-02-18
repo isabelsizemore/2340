@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+<div class="p-3 mt-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow p-3 mb-4 rounded form-container">
+          <div class="card-body">
+            <h2 class="form-title">Sign Up</h2>
+            <hr />
+            <form method="POST">
+              {% csrf_token %}
+              {{ template_data.form.as_p }}
+              <button type="submit" class="btn form-button">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

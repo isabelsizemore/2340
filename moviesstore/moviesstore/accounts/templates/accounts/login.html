@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+<div class="p-3 mt-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow p-3 mb-4 rounded form-container">
+          <div class="card-body">
+            <h2 class="form-title">Login</h2>
+            <hr />
+            {% if template_data.error %}
+            <div class="alert alert-danger" role="alert">
+              {{ template_data.error }}
+            </div>
+            {% endif %}
+            <form method="POST">
+              {% csrf_token %}
+              <p>
+                <label for="username">Username</label>
+                <input id="username" type="text"
+                       name="username" required
+                       autocomplete="username"
+                       class="form-control">
+              </p>
+              <p>
+                <label for="password">Password</label>
+                <input id="password" type="password"
+                       name="password" required
+                       autocomplete="current-password"
+                       class="form-control">
+              </p>
+              <button type="submit" class="btn form-button">Login</button>
+            </form>
+
+            <form action="{% url 'password_reset' %}" method="get">
+              <button type="submit" class="btn btn-reset">Reset Password</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,243 @@
+body {
+  font-family: 'Roboto', serif;
+}
+
+.navbar-nav {
+    margin-right: auto;
+    display: flex;
+    gap: 15px; /* Adds spacing between links */
+    padding: 20px;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none; /* Removes default underline */
+    color: white; /* Ensures text is visible */
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline; /* Adds underline only on hover */
+}
+
+
+.bg-dark {
+  background: url("/static/img/banner-bg.png") no-repeat fixed;
+  background-size: 100% auto;
+}
+
+.ms-footer {
+  background: url("/static/img/footer-bg.png") no-repeat fixed;
+}
+.ms-footer p {
+  color: #7F7F7F;
+  font-size: 13px;
+}
+.ms-footer a:hover {
+  color: #6ab43e;
+  text-decoration: none;
+}
+.ms-footer-bottom span{
+  font-size: 13px;
+  line-height: 38px;
+}
+.ms-footer-bottom a {
+  color: #6ab43e;
+  text-decoration: none;
+}
+.ms-footer-bottom a:hover {
+  color: #fff;
+}
+
+.img-card-200 {
+  width: fit-content;
+  max-height: 200px;
+}
+
+.img-card-400 {
+  width: fit-content;
+  max-height: 400px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* This spreads items to both ends */
+  align-items: center;
+  padding: 10px 20px; /* Adds spacing */
+  background-color: #002147; /* Adjust as needed */
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+  margin-left: auto; /* Pushes links to the right */
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* homepage index section */
+.index-bg {
+  background: url("/static/img/popcorn-2.jpg") no-repeat center center;
+  height: 45vh;
+  width: 100%;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.index-bg .container {
+  padding-top: 80px;
+  padding-left: 20px;
+}
+
+/* footer */
+footer {
+    color: white;
+    font-family: Roboto, serif;
+    background: url("/static/img/footer-bg.png") no-repeat center center;
+    background-size: cover;
+    padding: 20px 10px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 20px; /* Reduces fixed margins */
+}
+
+/* Footer Columns */
+.footer-column {
+    flex: 1;
+    padding: 10px;
+    min-width: 174px; /* Prevents shrinking too much */
+    text-align: left;
+}
+
+.footer-column a {
+    color: white; /* Makes links white */
+    text-decoration: none; /* Removes underline */
+}
+
+.footer-column a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #f0f0f0; /* Optional: Slightly lighter color on hover */
+}
+
+
+/* Center text in small screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer-column h3 {
+        text-align: center;
+    }
+
+    .footer-column ul {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+
+/* HOME */
+.about-section {
+    background-color: #042f57; /* Same color as footer for a seamless transition */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.about-container h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.about-container p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* For reset/signup pages */
+.form-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 24px;
+    font-family: 'Roboto', serif;
+    color: #002147;
+    margin-bottom: 20px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-button {
+    width: 100%;
+    background-color: #4b872d;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-family: 'Roboto', serif;
+}
+
+.form-button:hover {
+    background-color: #3e7324;
+}
+
+.btn-reset {
+    width: 100%;
+    background-color: #3e7a28;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-family: 'Roboto', serif;
+}
+
+.btn-reset:hover {
+    background-color: #2f5e1e;
+}
