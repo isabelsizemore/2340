@@ -1,0 +1,105 @@
+.navbar-nav {
+    margin-right: auto;
+    display: flex;
+    gap: 15px; /* Adds spacing between links */
+    padding: 20px;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none; /* Removes default underline */
+    color: white; /* Ensures text is visible */
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline; /* Adds underline only on hover */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* This spreads items to both ends */
+  align-items: center;
+  padding: 10px 20px; /* Adds spacing */
+  background-color: #002147; /* Adjust as needed */
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+  margin-left: auto; /* Pushes links to the right */
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.ms-footer {
+  background-color: transparent;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.ms-footer p {
+  color: #000;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.ms-footer a {
+  color: #B3A369;
+  text-decoration: none;
+}
+
+.ms-footer a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.ms-footer-bottom {
+  font-size: 13px;
+  line-height: 38px;
+}
+
+/* Cards */
+.img-card-200 {
+  width: auto;
+  max-height: 200px;
+  border-radius: 8px;
+}
+
+.img-card-400 {
+  width: auto;
+  max-height: 400px;
+  border-radius: 8px;
+}
+
+/* Buttons */
+.btn {
+  background-color: #B3A369;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #B3A369;
+}
+
+/* General Styling */
+body {
+  font-family: 'Roboto', serif;
+}
+
+.container {
+  padding: 20px;
+}
