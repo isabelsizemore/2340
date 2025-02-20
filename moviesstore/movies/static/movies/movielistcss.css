@@ -5,6 +5,8 @@
     padding: 20px;
 }
 
+/* comment */
+
 .navbar-nav .nav-link {
     text-decoration: none; /* Removes default underline */
     color: white; /* Ensures text is visible */
