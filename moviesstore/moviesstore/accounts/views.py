@@ -90,4 +90,4 @@ def password_reset(request):
             else:
                 template_data["error"] = "Session expired. Please try again."
 
-    return render(request, "accounts/password_reset.html", {"template_data": template_data})
+    return render(request, "accounts/password_reset_form.html", {"template_data": template_data})
